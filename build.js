@@ -31,7 +31,7 @@ function build (target) {
   }
   let jaSentences = texts.filter(
     // 先頭が英語の行を削除
-    (text, i) => !/^[a-zA-Z0-9"“—]/.test(text)
+    (text, i) => !/^[a-zA-Z0-9"“—/]/.test(text)
   ).map(
     (text) => {
       if (text === '') {

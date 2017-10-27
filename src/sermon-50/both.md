@@ -33,7 +33,7 @@ Effodiuntur opes, irritamenta malorum. [Wealth is dug up, incentive to all ill.]
 Nay, one celebrated writer gravely exhorts his countrymen, in order to banish all vice at once, to " throw all their money into the sea:"
 それだけでなく、ある有名な著作家が重々しく同胞にこう忠告しています。すべての悪を一度に放逐するためには「金銭を残らず海に投げ捨てなさい」と。
 
-. . . in mare proximum [. . .]  Summi materiem mali!
+in mare proximum [. . .]  Summi materiem mali!
 % in mare proximum ... Summi materiem mali! （諸悪の根源を近くの海に捨てなさい！）
 
 But is not all this mere empty rant Is there any solid reason therein By no means. For, let the world be as corrupt as it will, is gold or silver to blame "The love of money," we know, "is the root of all evil;" but not the thing itself.
