@@ -37,6 +37,10 @@ function build (target) {
       if (text === '') {
         return '\n\n'
       }
+      // 英語から始まる行を残したい時に '% ' で始める
+      if (text.startsWith('%')) {
+        text = text.slice(2)
+      }
       if (/^[1-9+*->#]/.test(text)) {
         return text + '\n'
       }
