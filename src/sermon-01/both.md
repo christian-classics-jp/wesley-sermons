@@ -1,4 +1,4 @@
-# 一　信仰による救い
+# 説教一　信仰による救い
 Salvation By Faith
 
 Preached at St. Mary's Oxford, before the university, on June 18, 1738
