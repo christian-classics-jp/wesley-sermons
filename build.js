@@ -4,6 +4,7 @@
  */
 const fs = require('fs')
 const { join } = require('path')
+const separate = require('jesep')
 
 const target = process.argv[2]
 if (!target) {
@@ -23,30 +24,8 @@ function build (target) {
     console.error(`${srcPath} not found`)
     return
   }
-  let text = fs.readFileSync(srcPath).toString()
-  let texts = text.split('\n').map(str => str.trim())
-  if (texts.length < 3) {
-    console.log(`Content of ${srcPath} is too short`)
-    return
-  }
-  let jaSentences = texts.filter(
-    // 先頭が英語の行を削除
-    (text, i) => !/^[a-zA-Z0-9"“—/]/.test(text)
-  ).map(
-    (text) => {
-      if (text === '') {
-        return '\n\n'
-      }
-      // 英語から始まる行を残したい時に '% ' で始める
-      if (text.startsWith('%')) {
-        text = text.slice(2)
-      }
-      if (/^[1-9+*->#]/.test(text)) {
-        return text + '\n'
-      }
-      return text
-    }
-  )
-  let ja = jaSentences.join('')
+  const text = fs.readFileSync(srcPath).toString()
+  const ja = separate(text)
+
   fs.writeFileSync(destPath, ja)
 }
